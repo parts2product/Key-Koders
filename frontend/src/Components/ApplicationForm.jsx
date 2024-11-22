@@ -5,6 +5,7 @@ import axios from "axios";
 
 const ApplicationForm = () => {
   const { jobTitle } = useParams();
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -56,6 +57,7 @@ const ApplicationForm = () => {
     }
 
     try {
+      setLoading(true);
       const response = await axios.post(
         `${process.env.REACT_APP_BACKEND_URL}/application-form`,
         { formData, userID, jobTitle },
@@ -72,11 +74,13 @@ const ApplicationForm = () => {
       } else {
         alert("Failed to submit the application.");
       }
+      setLoading(false);
     } catch (error) {
       console.error("Error submitting application:", error);
       alert(
         error.message
       );
+      setLoading(false);
     }
   };
 
@@ -208,7 +212,7 @@ const ApplicationForm = () => {
               />
             </div>
             <button type="submit" className="submit-btn">
-              Submit Application
+            {loading ? 'Submitting...' : 'Submit Application'}
             </button>
           </form>
         </>
