@@ -125,6 +125,10 @@
     transition: background-color 0.3s;
 }
 
+.submit-btn:disabled {
+    cursor: not-allowed;
+}
+
 .submit-btn:hover {
     background-color: #e66500; /* Darker orange on hover */
 }

@@ -50,7 +50,7 @@ const ApplicationForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const userID = localStorage.getItem("userID");
-    if(!userID) {
+    if (!userID) {
       alert("Sign in to apply for a job.");
       window.location.href = "/login";
       return;
@@ -69,17 +69,16 @@ const ApplicationForm = () => {
       );
 
       if (response.data.success) {
+        setLoading(false);
         alert("Application submitted successfully!");
         setSuccess(true);
       } else {
+        setLoading(false);
         alert("Failed to submit the application.");
       }
-      setLoading(false);
     } catch (error) {
       console.error("Error submitting application:", error);
-      alert(
-        error.message
-      );
+      alert(error.message);
       setLoading(false);
     }
   };
@@ -211,8 +210,8 @@ const ApplicationForm = () => {
                 placeholder="Place your resume drive link"
               />
             </div>
-            <button type="submit" className="submit-btn">
-            {loading ? 'Submitting...' : 'Submit Application'}
+            <button type="submit" className="submit-btn" disabled={loading}>
+              {loading ? "Submitting..." : "Submit Application"}
             </button>
           </form>
         </>
