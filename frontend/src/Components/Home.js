@@ -4,9 +4,6 @@ import { CgMail } from "react-icons/cg";
 import { BsLinkedin } from "react-icons/bs"; 
 import React, { useEffect, useState ,useRef} from "react";
 import "../styles/Home.css";
-import bannerImg from "../assets/banner.jpg";
-import servicesImg from "../assets/services.jpg";
-import clientsImg from "../assets/clients.jpg";
 import Slider from "react-slick"; // For sliders
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

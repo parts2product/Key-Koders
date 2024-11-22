@@ -14,8 +14,6 @@ const ApplicationForm = () => {
     education: "",
     resume: "",
   });
-  const [file, setFile] = useState(null); // State for the file (resume)
-  const [filePreview, setFilePreview] = useState(null); // State for file preview
   const [skillInput, setSkillInput] = useState(""); // State for the skills input field
   const [success, setSuccess] = useState(false); // State for tracking successful submission
 
@@ -23,19 +21,6 @@ const ApplicationForm = () => {
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-  };
-
-  // Handle file input changes
-  const handleFileChange = (e) => {
-    const uploadedFile = e.target.files[0];
-    setFile(uploadedFile);
-
-    // Show file preview for PDF files
-    if (uploadedFile && uploadedFile.type.includes("pdf")) {
-      setFilePreview(URL.createObjectURL(uploadedFile));
-    } else {
-      setFilePreview(null);
-    }
   };
 
   // Handle changes to the skills input field
