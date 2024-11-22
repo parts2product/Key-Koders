@@ -1,0 +1,158 @@
+General Styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+section#about {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-block,
+.block-section {
+  margin-bottom: 30px;
+}
+
+/* Header Styles */
+h2 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: #007BFF;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* About Section - Centered Block */
+.about-block {
+  margin-bottom: 50px;
+}
+
+/* Services Section */
+.services-section {
+  margin-bottom: 50px;
+}
+
+.services-tags {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.service-tag {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.service-tag h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+/* For Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .services-tags {
+    grid-template-columns: 1fr;
+  }
+
+  .service-tag {
+    padding: 15px;
+  }
+}
+
+/* For Tablets (481px to 768px) */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .services-tags {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-tag {
+    padding: 18px;
+  }
+}
+
+/* For Desktop (769px and above) */
+@media (min-width: 769px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  .services-tags {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .service-tag {
+    padding: 20px;
+  }
+}

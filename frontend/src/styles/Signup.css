@@ -1,0 +1,108 @@
+/* General container styling */
+.signup-container {
+    max-width: 350px; /* Reduced width */
+    margin: 50px auto;
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px;
+    background: linear-gradient(180deg, #181818, #9d9696);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #fff;
+}
+
+/* Form title styling */
+h2 {
+    font-size: 1.8rem; /* Slightly smaller font */
+    margin-bottom: 20px; /* Reduced space below the title */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Form styling */
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields styling */
+.form-group {
+    margin-bottom: 15px; /* Reduced margin between inputs */
+}
+
+label {
+    font-size: 1rem; /* Reduced label size */
+    margin-bottom: 6px; /* Reduced space below the label */
+    display: block;
+    color: #fff;
+}
+
+input {
+    padding: 12px; /* Reduced padding */
+    font-size: 0.9rem; /* Reduced font size */
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    width: 300px;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    border-color: #6e7bff;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(110, 123, 255, 0.5);
+}
+
+/* Button styling */
+.signup-btn {
+    padding: 12px; /* Reduced padding */
+    font-size: 1rem; /* Reduced font size */
+    background-color: #6e7bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #5a67d8;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+/* Sign In link styling */
+.signin-link {
+    margin-top: 15px; /* Reduced space above the link */
+    color: #fff;
+}
+
+.signin-link a {
+    color: #ffe600;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.signin-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 15px;
+        margin: 15px;
+    }
+    input{
+        width:85% !important ;
+    }
+    h2 {
+        font-size: 1.6rem; 
+    }
+}
