@@ -82,11 +82,9 @@ const handleProfile = ()=>{
         </li>
         {userEmail ? (
           <>
-            <li onClick={handleProfile}>
-              <span className="navbar__link navbar__user-icon">
+            <button className="navbar__link navbar__user-icon" onClick={handleProfile}>
                 {userEmail.charAt(0).toUpperCase()}
-              </span>
-            </li>
+            </button>
             <li>
               <a
                 onClick={handleLogout}
