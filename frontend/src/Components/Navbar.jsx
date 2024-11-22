@@ -25,7 +25,7 @@ const handleProfile = ()=>{
       // Fetch user details
       const fetchUser = async () => {
         try {
-          const response = await axios.get(`http://localhost:5000/getuser/${userID}`);
+          const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/getuser/${userID}`);
           console.log(response.data);
           const email = response.data.user.email; // Assuming the API returns the user data in the `data` field
           setUserEmail(email); // Update userEmail state

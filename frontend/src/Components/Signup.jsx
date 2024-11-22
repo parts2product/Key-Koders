@@ -33,7 +33,7 @@ const Signup = () => {
         setError(''); 
 
         try {
-            const response = await axios.post('http://localhost:5000/register', formData); 
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/register`, formData); 
 
             if (response.data.success) {
                 alert('Signup successful');

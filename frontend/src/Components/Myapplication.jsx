@@ -12,7 +12,7 @@ const MyApplications = () => {
     useEffect(() => {
         const fetchApplications = async () => {
             try {
-                const response = await axios.get(`http://localhost:5000/my-applications?userID=${userID}`);
+                const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/my-applications?userID=${userID}`);
                 const myApplications = response.data.applications
                 setApplications(myApplications); // Assuming data is an array of applications
                 setLoading(false);

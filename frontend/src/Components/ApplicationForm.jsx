@@ -57,7 +57,7 @@ const ApplicationForm = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/application-form",
+        `${process.env.REACT_APP_BACKEND_URL}/application-form`,
         { formData, userID, jobTitle },
         {
           headers: {

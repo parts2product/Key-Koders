@@ -26,7 +26,7 @@ const Signin = () => {
         setError('');
 
         try {
-            const response = await axios.post('http://localhost:5000/login', formData);
+            const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/login`, formData);
             // console.log(response);
 
             if (response.data.success) {
