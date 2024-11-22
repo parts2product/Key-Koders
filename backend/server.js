@@ -9,7 +9,7 @@ const multer = require("multer");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const UserModel = require("./Models/Users.js");
-const ApplicationModel = require("./models/ApplicationModel.js");
+const ApplicationModel = require("./Models/ApplicationModel.js");
 require('dotenv').config();
 // Middleware
 app.use(express.json());
