@@ -9,8 +9,7 @@ const multer = require("multer");
 const path = require("path");
 const nodemailer = require("nodemailer");
 const UserModel = require("./Models/Users.js");
-const Job = require("./Models/Job.js");
-const ApplicationModel = require("./models/ApplicationModel");
+const ApplicationModel = require("./models/ApplicationModel.js");
 require('dotenv').config();
 // Middleware
 app.use(express.json());
@@ -21,8 +20,6 @@ app.use(
   })
 );
 
-app.use(express.urlencoded({ extended: true }));
-app.use("/uploads", express.static(path.join(__dirname, "uploads"))); // Serve static files
 app.use(cookieParser());
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -134,18 +131,6 @@ app.get("/getuser/:id", async (req, res) => {
   }
 });
 
-// Multer Storage Configuration
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, path.join(__dirname, "uploads"));
-  },
-  filename: function (req, file, cb) {
-    const uniqueSuffix = Date.now() + "-" + Math.round(Math.random() * 1e9);
-    cb(null, `${uniqueSuffix}-${file.originalname}`);
-  },
-});
-
-const upload = multer({ storage });
 
 // Create transporter for email
 const transporter = nodemailer.createTransport({
