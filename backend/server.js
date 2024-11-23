@@ -156,7 +156,7 @@ app.post("/application-form", async (req, res) => {
   const resumeLink = resume ? resume : "#"; // Replace '#' with the actual link to the resume.
 
   const mailOptions = {
-    to: "keykoders@gmail.com",
+    to: "mugesharasanb@gmail.com",
     subject: "New Application Received",
     html: `
     <div style="font-family: Arial, sans-serif; line-height: 1.8; color: #333; padding: 20px;">
