@@ -4,10 +4,10 @@
     margin: 50px auto;
     padding: 20px; /* Reduced padding */
     border-radius: 15px;
-    background: linear-gradient(180deg, #000000, #9d9696);
+    background: linear-gradient(180deg, #ff6200, #ff5e0015);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 /* Form title styling */
@@ -15,6 +15,7 @@ h2 {
     font-size: 1.8rem; /* Slightly smaller font */
     margin-bottom: 20px; /* Reduced space below the title */
     font-family: 'Poppins', sans-serif;
+    color: black;
 }
 
 /* Form styling */
@@ -26,14 +27,17 @@ h2 {
 /* Input fields styling */
 .form-group {
     margin-bottom: 15px; /* Reduced margin between inputs */
+    text-align: left;
+    font-weight: bold;
 }
 
 label {
     font-size: 1rem; /* Reduced label size */
     margin-bottom: 6px; /* Reduced space below the label */
     display: block;
-    color: #fff;
+    color: #000000;
 }
+
 
 input {
     padding: 12px; /* Reduced padding */
@@ -43,7 +47,7 @@ input {
     outline: none;
     width: 300px;
     background-color: #f7f7f7;
-    color: #333;
+    color: #000000;
     transition: 0.3s ease;
 }
 
@@ -58,7 +62,7 @@ input:focus {
     padding: 12px; /* Reduced padding */
     font-size: 1rem; /* Reduced font size */
     background-color: #6e7bff;
-    color: white;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -79,11 +83,11 @@ input:focus {
 /* Sign Up link styling */
 .signup-link {
     margin-top: 15px; /* Reduced space above the link */
-    color: #fff;
+    color: #d2cccc;
 }
 
 .signup-link a {
-    color: #ffe600;
+    color: #5a67d8;
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s ease;

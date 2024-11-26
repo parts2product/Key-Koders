@@ -4,7 +4,7 @@
     margin: 50px auto;
     padding: 20px; /* Reduced padding */
     border-radius: 15px;
-    background: linear-gradient(180deg, #181818, #9d9696);
+    background: linear-gradient(180deg, #ff6200, #ff5e0015);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     color: #fff;
@@ -32,7 +32,7 @@ label {
     font-size: 1rem; /* Reduced label size */
     margin-bottom: 6px; /* Reduced space below the label */
     display: block;
-    color: #fff;
+    color: #000000;
 }
 
 input {
@@ -79,11 +79,11 @@ input:focus {
 /* Sign In link styling */
 .signin-link {
     margin-top: 15px; /* Reduced space above the link */
-    color: #fff;
+    color: #a9a1a1;
 }
 
 .signin-link a {
-    color: #ffe600;
+    color: #6e7bff;
     font-weight: bold;
     text-decoration: none;
     transition: 0.3s ease;

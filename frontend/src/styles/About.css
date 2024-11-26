@@ -1,17 +1,5 @@
-General Styles
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-section#about {
+section #about {
   padding: 40px 20px;
   background-color: #fff;
   text-align: center;
