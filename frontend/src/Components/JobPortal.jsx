@@ -102,7 +102,7 @@ const jobs = [
     },
     {
       "id": 7,
-      "title": "UI/UX Designer",
+      "title": "UI UX Designer",
       "salary": "85,000",
       "responsibilities": [
         "Design and create user interfaces and experiences that are intuitive and engaging.",
