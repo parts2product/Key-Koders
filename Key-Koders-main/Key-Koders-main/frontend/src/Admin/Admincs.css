@@ -1,0 +1,82 @@
+.course-management {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px auto;
+  }
+  
+  .course-management h2 {
+    color: #333;
+  }
+  
+  /* Input & Textarea Styling */
+  .course-management input,
+  .course-management textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .course-management textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  /* Button Styling */
+  .course-management button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .course-management button:hover {
+    background: #0056b3;
+  }
+  
+  /* Image Preview */
+  .image-preview {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .preview-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .subscription-requests table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .subscription-requests th,
+  .subscription-requests td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .subscription-requests th {
+    background-color: #f2f2f2;
+  }
+  body, .admin-container, .course-management {
+    background-image: url('../assets/backer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .course-management {
+    background: #fff; /* or any solid color you prefer */
+  }
+  
