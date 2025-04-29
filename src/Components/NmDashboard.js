@@ -28,7 +28,7 @@ const NmDashboard = () => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        if (username === "Karyouns" && password === "Guest@123") {
+        if (username === "Karyouns" && password === "Nm@123") {
             setIsAuthenticated(true);
         } else {
             setError("Invalid username or password");
