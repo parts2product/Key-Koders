@@ -26,6 +26,7 @@ const NmDashboard = () => {
         }
     }, [activeSection]);
 
+    
     const handleLogin = (e) => {
         e.preventDefault();
         if (username === "Karyouns" && password === "Nm@123") {
