@@ -26,6 +26,7 @@ const TrainerSchedule = () => {
       if (!value) newErrors[key] = 'Required';
     });
 
+    
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
       setLoading(false);
