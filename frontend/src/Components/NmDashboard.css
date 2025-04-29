@@ -1,0 +1,67 @@
+/* NmDashboard.css */
+
+.full-page-background {
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    background-image: url('../assets/backer.jpg'); /* Adjust the path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.login-card {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.login-input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-button {
+    padding: 10px;
+    background-color: #2f4f4f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.login-error {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #000;
+}
+
+.login-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: bold;
+}
