@@ -32,7 +32,7 @@ const TrainerSchedule = () => {
     } else {
       const queryParams = new URLSearchParams(formData).toString();
 
-      fetch(`http://localhost:5000/api/trainer-schedules?${queryParams}`)
+      fetch(`https://keykoder-backend.onrender.com/api/trainer-schedules?${queryParams}`)
         .then((res) => res.json())
         .then((data) => {
           setTableData(data.length > 0 ? data : []);

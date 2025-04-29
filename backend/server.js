@@ -217,7 +217,7 @@ app.get("/courses", async (req, res) => {
 
     const coursesWithImages = results.map((course) => ({
       ...course,
-      courseImage: course.courseImage ? `http://localhost:5000${course.courseImage}` : null,
+      courseImage: course.courseImage ? `https://keykoder-backend.onrender.com${course.courseImage}` : null,
     }));
 
     res.json(coursesWithImages);

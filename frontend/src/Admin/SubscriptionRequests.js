@@ -7,7 +7,7 @@ const SubscriptionRequests = () => {
   // Fetch all subscriptions
   const fetchSubscriptions = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/subscriptions");
+      const response = await fetch("https://keykoder-backend.onrender.com/api/subscriptions");
       const data = await response.json();
       console.log("Fetched subscriptions:", data); // 🛠️ check field names
       setSubscriptions(data);
@@ -25,7 +25,7 @@ const SubscriptionRequests = () => {
   // Handle approve/reject action
   const handleAction = async (id, action) => {
     try {
-      await fetch(`http://localhost:5000/api/subscriptions/${id}`, {
+      await fetch(`https://keykoder-backend.onrender.com/api/subscriptions/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ status: action }),

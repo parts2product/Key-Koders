@@ -23,7 +23,7 @@ const TrainerDetails = () => {
     });
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/trainers')
+        fetch('https://keykoder-backend.onrender.com/api/trainers')
             .then(res => res.json())
             .then(data => {
                 console.log("Fetched trainers:", data);
@@ -58,7 +58,7 @@ const TrainerDetails = () => {
         // Log formData to check if it's correctly formatted
         console.log('FormData being sent:', formData);
 
-        fetch("http://localhost:5000/api/trainers", {
+        fetch("https://keykoder-backend.onrender.com/api/trainers", {
             method: "POST",
             body: formData,
         })

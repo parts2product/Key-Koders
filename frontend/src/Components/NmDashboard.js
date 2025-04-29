@@ -19,7 +19,7 @@ const NmDashboard = () => {
 
     useEffect(() => {
         if (activeSection === "trainer") {
-            fetch('http://localhost:5000/api/trainers')
+            fetch('https://keykoder-backend.onrender.com/api/trainers')
                 .then(res => res.json())
                 .then(data => setTrainers(data))
                 .catch(err => console.error("Error fetching trainers", err));

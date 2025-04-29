@@ -33,7 +33,7 @@ function CourseManagement() {
     formData.append("courseImage", courseImage);
 
     try {
-      const response = await fetch("http://localhost:5000/add-course", {
+      const response = await fetch("https://keykoder-backend.onrender.com/add-course", {
         method: "POST",
         body: formData,
       });

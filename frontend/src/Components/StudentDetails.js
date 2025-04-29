@@ -223,7 +223,7 @@ function StudentDetails() {
     try {
 
       const queryString = new URLSearchParams(filters).toString(); // Convert the filters to a query string
-      const response = await fetch(`http://localhost:5000/api/students/search?${queryString}`, {
+      const response = await fetch(`https://keykoder-backend.onrender.com/api/students/search?${queryString}`, {
         method: "GET", // Use GET instead of POST
         headers: { "Content-Type": "application/json" }, // Optional, as it's a GET request
       });

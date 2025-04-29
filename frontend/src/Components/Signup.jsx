@@ -33,7 +33,7 @@ const Signup = () => {
         setError(''); 
 
         try {
-            const backendURL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5000";
+            const backendURL = process.env.REACT_APP_BACKEND_URL || "https://keykoder-backend.onrender.com";
 const response = await axios.post(`${backendURL}/register`, formData);
 
             if (response.data.success) {
