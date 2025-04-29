@@ -26,7 +26,7 @@ const NmDashboard = () => {
         }
     }, [activeSection]);
 
-    
+
     const handleLogin = (e) => {
         e.preventDefault();
         if (username === "Karyouns" && password === "Nm@123") {
@@ -36,6 +36,7 @@ const NmDashboard = () => {
         }
     };
 
+    
     if (!isAuthenticated) {
         return (
             <div className="full-page-background">
