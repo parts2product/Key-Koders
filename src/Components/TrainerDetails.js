@@ -59,6 +59,7 @@ const TrainerDetails = () => {
         // Log formData to check if it's correctly formatted
         console.log('FormData being sent:', formData);
 
+        
         fetch("https://keykoder-backend.onrender.com/api/trainers", {
             method: "POST",
             body: formData,
