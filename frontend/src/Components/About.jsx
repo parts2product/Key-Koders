@@ -84,7 +84,6 @@ const About = () => {
         <div style={blockStyle}>
           <h2 style={headingStyle}>About KeyKoders</h2>
           <p style={paragraphStyle}>
-            Powered by Karyoun Innovations Private Limited 
             KeyKoders is a software development company committed to delivering top-notch web solutions.
             We take pride in offering innovative and scalable services, providing customized technology solutions for businesses worldwide.
           </p>
@@ -159,6 +158,9 @@ const About = () => {
             })}
           </div>
         </div>
+      </div>
+      <div style={{ marginTop: '40px', fontSize: '0.9rem', color: '#999', textAlign: 'center' }}>
+        © Powered by Karyoun Innovations Pvt Ltd
       </div>
     </section>
   );
